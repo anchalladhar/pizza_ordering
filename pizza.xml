@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Welcome message -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Pizza Ordering App"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Spinner for pizza selection -->
+    <Spinner
+        android:id="@+id/pizza_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:prompt="@string/select_pizza"
+        android:entries="@array/pizza_options"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Checkbox for extra cheese -->
+    <CheckBox
+        android:id="@+id/extra_cheese_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Extra Cheese"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Checkbox for pepperoni -->
+    <CheckBox
+        android:id="@+id/pepperoni_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pepperoni"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Checkbox for mushrooms -->
+    <CheckBox
+        android:id="@+id/mushrooms_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mushrooms"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Button to place the order -->
+    <Button
+        android:id="@+id/order_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Place Order"
+        android:textAllCaps="false"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- TextView to display order summary -->
+    <TextView
+        android:id="@+id/order_summary_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Order Summary will be displayed here."
+        android:textSize="16sp"
+        android:textStyle="italic"
+        android:layout_marginTop="16dp"
+        android:gravity="center"/>
+
+</LinearLayout>
